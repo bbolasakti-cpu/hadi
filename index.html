@@ -6,148 +6,126 @@
     <title>HD Kopi - Tempat Santai Menikmati Rasa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'DM Serif Display', serif; }
+    </style>
 </head>
-<body class="bg-[#FAF7F2] text-[#3E2723] font-sans selection:bg-[#8D6E63] selection:text-white">
+<body class="bg-[#FAF7F2] text-[#3E2723] selection:bg-[#8D6E63] selection:text-white">
 
-    <header class="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop');">
-        <div class="p-6">
-            <span class="text-[#D7CCC8] tracking-widest uppercase text-sm font-semibold block mb-2">— Welcome to Our Coffee Shop —</span>
-            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white tracking-wide mb-4">HD KOPI</h1>
-            <p class="text-amber-100 text-lg md:text-xl font-light max-w-md mx-auto mb-6">Seduhan penuh kehangatan, cita rasa otentik di setiap cangkir.</p>
-            <a href="#menu" class="bg-[#8D6E63] hover:bg-[#705246] text-white font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-md inline-block">
+    <header class="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1600&auto=format&fit=crop&sig=hero1');">
+        <div class="p-6 relative z-10">
+            <span class="text-[#D7CCC8] tracking-widest uppercase text-xs sm:text-sm font-semibold block mb-2 opacity-90">— Welcome to Our Coffee Shop —</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white tracking-wide mb-4 dropped-shadow">HD KOPI</h1>
+            <p class="text-amber-100 text-base md:text-lg font-light max-w-md mx-auto mb-8 leading-relaxed">Seduhan penuh kehangatan, cita rasa otentik di setiap cangkir.</p>
+            <a href="#menu" class="bg-[#8D6E63] hover:bg-[#705246] text-white font-medium px-7 py-3 rounded-full transition-all duration-300 shadow-lg inline-block transform hover:-translate-y-1">
                 Lihat Menu <i class="fas fa-arrow-down ml-2"></i>
             </a>
         </div>
+        <div class="absolute inset-0 bg-black/10"></div>
     </header>
 
-    <section id="menu" class="py-16 container mx-auto px-6 max-w-6xl">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-serif font-bold text-[#4E342E]">Menu Istimewa Kami</h2>
-            <div class="w-16 h-1 bg-[#8D6E63] mx-auto mt-3 rounded-full"></div>
-            <p class="text-gray-500 mt-2 text-sm">Dibuat dari biji kopi pilihan oleh barista berpengalaman</p>
+    <section id="menu" class="py-20 container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif font-bold text-[#4E342E]">Menu Istimewa Kami</h2>
+            <div class="w-16 h-1 bg-[#8D6E63] mx-auto mt-4 rounded-full"></div>
+            <p class="text-gray-500 mt-3 text-base">Dibuat dari biji kopi pilihan oleh barista berpengalaman</p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Espresso" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <span class="absolute top-3 right-3 bg-[#4E342E] text-white text-xs px-3 py-1 rounded-full">Best Seller</span>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop&sig=menu1" alt="Espresso" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <span class="absolute top-4 right-4 bg-[#4E342E]/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Strong</span>
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Espresso</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 15.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Espresso</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 15.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Ekstrak kopi murni yang pekat, memberikan suntikan energi instan.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Ekstrak kopi murni yang pekat, memberikan suntikan energi instan.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?q=80&w=500&auto=format&fit=crop" alt="Kopi Susu Gula Aren" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?q=80&w=600&auto=format&fit=crop&sig=menu2" alt="Kopi Susu Gula Aren" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <span class="absolute top-4 right-4 bg-[#8D6E63]/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Best Seller</span>
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Kopi Susu Gula Aren</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 18.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Kopi Susu Aren</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 18.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Perpaduan espresso, susu segar lembut, dan manisnya gula aren murni.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Perpaduan espresso, susu segar lembut, dan manisnya gula aren murni.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1571658168068-382b74658d40?q=80&w=500&auto=format&fit=crop" alt="Cafe Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1571658168068-382b74658d40?q=80&w=600&auto=format&fit=crop&sig=menu3" alt="Cafe Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Cafe Latte</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 20.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Cafe Latte</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 20.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Espresso dengan takaran susu *steamed* berlimpah dan busa halus di atasnya.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Espresso dengan takaran susu *steamed* berlimpah dan busa halus di atasnya.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1595895694038-7f0535e62cc3?q=80&w=500&auto=format&fit=crop" alt="Americano" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1595895694038-7f0535e62cc3?q=80&w=600&auto=format&fit=crop&sig=menu4" alt="Americano" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Ice Americano</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 15.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Ice Americano</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 15.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Espresso shot ganda yang dilarutkan air, disajikan dingin menyegarkan.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Espresso shot ganda yang dilarutkan air, disajikan dingin menyegarkan.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1606791405792-1004f1718d0c?q=80&w=500&auto=format&fit=crop" alt="Matcha Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1606791405792-1004f1718d0c?q=80&w=600&auto=format&fit=crop&sig=menu5" alt="Matcha Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Matcha Latte</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 22.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Matcha Latte</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 22.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Untuk non-kopi: teh hijau Jepang premium berpadu susu yang creamy.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Untuk non-kopi: teh hijau Jepang premium berpadu susu yang creamy.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=500&auto=format&fit=crop" alt="Croissant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-amber-100/50">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=600&auto=format&fit=crop&sig=menu6" alt="Croissant" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-bold text-lg text-[#3E2723]">Butter Croissant</h3>
-                        <span class="font-bold text-[#8D6E63]">Rp 17.000</span>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-xl text-[#3E2723]">Butter Croissant</h3>
+                        <span class="font-bold text-lg text-[#8D6E63]">Rp 17.000</span>
                     </div>
-                    <p class="text-gray-500 text-xs leading-relaxed">Kue pastri renyah bermentega tinggi, pendamping sempurna kopi hangat Anda.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Kue pastri renyah bermentega tinggi, pendamping sempurna kopi Anda.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-[#2D1B18] text-[#E0D4D2] pt-12 pb-6 border-t-4 border-[#8D6E63]">
-        <div class="container mx-auto px-6 max-w-6xl grid md:grid-cols-2 gap-8 mb-10">
+    <footer class="bg-[#2D1B18] text-[#E0D4D2] pt-16 pb-8 border-t-4 border-[#8D6E63]">
+        <div class="container mx-auto px-6 max-w-6xl grid md:grid-cols-2 gap-10 mb-12">
             
             <div>
-                <h3 class="text-white font-serif font-bold text-xl mb-4 flex items-center gap-2">
+                <h3 class="text-white font-serif font-bold text-2xl mb-5 flex items-center gap-3">
                     <i class="fas fa-map-marker-alt text-[#8D6E63]"></i> Alamat Kedai
                 </h3>
-                <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+                <p class="text-base text-gray-400 leading-relaxed max-w-md">
                     Jl. Jend. Sudirman No. 45, Kecamatan Tembilahan, Kabupaten Indragiri Hilir, Riau (Sebelah Toko Utama).
                 </p>
-                <p class="text-xs text-amber-200/60 mt-3"><i class="far fa-clock mr-1"></i> Buka Setiap Hari: 10.00 - 23.00 WIB</p>
-            </div>
-
-            <div>
-                <h3 class="text-white font-serif font-bold text-xl mb-4 flex items-center gap-2">
-                    <i class="fas fa-share-alt text-[#8D6E63]"></i> Ikuti Media Sosial Kami
-                </h3>
-                <p class="text-sm text-gray-400 mb-4">Dapatkan info promo menarik harian lewat akun resmi kami:</p>
-                <div class="flex gap-4">
-                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-yellow-600 hover:to-purple-600 transition duration-300">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://tiktok.com" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-black hover:text-cyan-400 transition duration-300">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                    <a href="https://wa.me/628123456789" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-green-600 transition duration-300">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="border-t border-amber-900/40 pt-6 text-center text-xs text-gray-500">
-            <p>&copy; 2026 HD Kopi Tembilahan. Semua Hak Cipta Dilindungi.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+                <p class="text-sm text-amber-200/70 mt-4">
