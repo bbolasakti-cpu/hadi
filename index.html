@@ -3,256 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKN 2 Tembilahan - Unggul & Kompeten</title>
+    <title>HD Kopi - Tempat Santai Menikmati Rasa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            500: '#f97316', /* Oranye Utama */
-                            600: '#ea580c',
-                            700: '#c2410c',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .jurusan-card:hover .icon-box {
-            transform: scale(1.1) rotate(5deg);
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans selection:bg-brand-500 selection:text-white">
+<body class="bg-[#FAF7F2] text-[#3E2723] font-sans selection:bg-[#8D6E63] selection:text-white">
 
-    <header class="relative bg-gradient-to-br from-brand-600 to-amber-500 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-10 mix-blend-overlay"></div>
-        <div class="container mx-auto px-6 py-24 md:py-32 relative z-10 text-center">
-            <span class="bg-white/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm inline-block mb-4 animate-bounce">
-                Selamat Datang di Website Resmi
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 dropped-shadow">
-                SMKN 2 TEMBILAHAN
-            </h1>
-            <p class="text-lg md:text-xl text-orange-50 max-w-2xl mx-auto mb-8 font-light">
-                Membentuk Generasi Unggul, Berkarakter, Berketerampilan Tinggi, dan Siap Menghadapi Era Teknologi Global.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#jurusan" class="bg-white text-brand-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-orange-50 transition duration-300 transform hover:-translate-y-1">
-                    <i class="fas fa-graduation-cap mr-2"></i> Lihat Jurusan
-                </a>
-                <a href="#kontak" class="border-2 border-white/80 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition duration-300">
-                    <i class="fas fa-envelope mr-2"></i> Hubungi Kami
-                </a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#f9f9f9"></path>
-            </svg>
+    <header class="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop');">
+        <div class="p-6">
+            <span class="text-[#D7CCC8] tracking-widest uppercase text-sm font-semibold block mb-2">— Welcome to Our Coffee Shop —</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white tracking-wide mb-4">HD KOPI</h1>
+            <p class="text-amber-100 text-lg md:text-xl font-light max-w-md mx-auto mb-6">Seduhan penuh kehangatan, cita rasa otentik di setiap cangkir.</p>
+            <a href="#menu" class="bg-[#8D6E63] hover:bg-[#705246] text-white font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-md inline-block">
+                Lihat Menu <i class="fas fa-arrow-down ml-2"></i>
+            </a>
         </div>
     </header>
 
-    <section class="py-16 container mx-auto px-6">
+    <section id="menu" class="py-16 container mx-auto px-6 max-w-6xl">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900">Visi & Misi Sekolah</h2>
-            <div class="w-24 h-1 bg-brand-500 mx-auto mt-3 rounded-full"></div>
+            <h2 class="text-3xl font-serif font-bold text-[#4E342E]">Menu Istimewa Kami</h2>
+            <div class="w-16 h-1 bg-[#8D6E63] mx-auto mt-3 rounded-full"></div>
+            <p class="text-gray-500 mt-2 text-sm">Dibuat dari biji kopi pilihan oleh barista berpengalaman</p>
         </div>
-        
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-500 transform hover:scale-[1.02] transition duration-300">
-                <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 text-xl shadow-inner">
-                    <i class="fas fa-eye"></i>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Espresso" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-[#4E342E] text-white text-xs px-3 py-1 rounded-full">Best Seller</span>
                 </div>
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">VISI</h3>
-                <p class="text-gray-600 leading-relaxed italic text-lg">
-                    "Menjadi lembaga pendidikan vokasi yang unggul, menghasilkan lulusan berkarakter, kompeten di bidang teknologi, inovatif, dan siap bersaing secara global."
-                </p>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Espresso</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 15.000</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Ekstrak kopi murni yang pekat, memberikan suntikan energi instan.</p>
+                </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-500 transform hover:scale-[1.02] transition duration-300">
-                <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6 text-xl shadow-inner">
-                    <i class="fas fa-bullseye"></i>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?q=80&w=500&auto=format&fit=crop" alt="Kopi Susu Gula Aren" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                 </div>
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">MISI</h3>
-                <ul class="space-y-3 text-gray-600">
-                    <li class="flex items-start gap-3">
-                        <span class="flex items-center justify-center bg-brand-500 text-white rounded-full w-5 h-5 text-xs mt-1 shrink-0">1</span>
-                        <span>Menyelenggarakan pembelajaran berbasis industri dan teknologi terkini.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="flex items-center justify-center bg-brand-500 text-white rounded-full w-5 h-5 text-xs mt-1 shrink-0">2</span>
-                        <span>Menanamkan karakter disiplin, berakhlak mulia, dan berjiwa wirausaha.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="flex items-center justify-center bg-brand-500 text-white rounded-full w-5 h-5 text-xs mt-1 shrink-0">3</span>
-                        <span>Memperluas kerjasama strategis dengan dunia usaha dan industri nasional.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="jurusan" class="py-16 bg-brand-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Kompetensi Keahlian (Jurusan)</h2>
-                <p class="text-gray-500 mt-2">Pilihan program studi terbaik untuk masa depan gemilang</p>
-                <div class="w-24 h-1 bg-brand-500 mx-auto mt-3 rounded-full"></div>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Kopi Susu Gula Aren</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 18.000</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Perpaduan espresso, susu segar lembut, dan manisnya gula aren murni.</p>
+                </div>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Komputer Jaringan & Telekomunikasi</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Ahli dalam administrasi server, keamanan siber, infrastruktur jaringan fiber optik, dan pemrograman jaringan awan (cloud).</p>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1571658168068-382b74658d40?q=80&w=500&auto=format&fit=crop" alt="Cafe Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                 </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-cogs"></i>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Cafe Latte</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 20.000</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Permesinan</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Menguasai pengoperasian mesin bubut presisi, teknik pengelasan tingkat lanjut, dan perancangan manufaktur berbasis mesin otomatis CNC.</p>
+                    <p class="text-gray-500 text-xs leading-relaxed">Espresso dengan takaran susu *steamed* berlimpah dan busa halus di atasnya.</p>
                 </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Geospasial Survey Pemetaan Tanah</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Keahlian langka membaca struktur bumi menggunakan drone pemetaan, Total Station, dan pengolahan data GIS untuk sektor konstruksi/tambang.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Kendaraan Ringan Otomotif</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Mahir dalam perawatan mesin mobil injeksi (EFI), sistem kelistrikan interior mobil, serta adaptasi teknologi mobil listrik masa depan.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-motorcycle"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Bisnis Sepeda Motor</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Kurikulum menyatu langsung dengan standar industri pabrikan besar. Dibekali ilmu manajemen pengelolaan bisnis bengkel mandiri.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-volume-up"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Elektronika Audio Video</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Spesialis perakitan sistem audio profesional, micro-controller (IoT), reparasi sirkuit elektronik, dan pengoperasian alat broadcasting.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-solar-panel"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Tenaga Surya Hidro dan Angin</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Pelopor Energi Terbarukan (EBT). Kompetensi tinggi instalasi panel surya pembangkit listrik mandiri yang dicari industri masa kini.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Energi Biomasa</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Mampu mengolah limbah organik (seperti kelapa sawit lokal) menjadi bahan bakar alternatif, biogas, dan produk ramah lingkungan bernilai tinggi.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-archway"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Desain Arsitekture (DPIB)</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Mahir merancang gambar bangunan 2D/3D dengan AutoCAD & SketchUp, estimasi biaya (RAB), dan pengawasan konstruksi sipil.</p>
-                </div>
-
-                <div class="jurusan-card bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-orange-100 lg:col-span-3 lg:max-w-md lg:mx-auto">
-                    <div class="icon-box w-12 h-12 bg-brand-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl transition-transform duration-300 shadow-md">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Teknik Instalasi Ketenagalistrikan</h4>
-                    <p class="text-sm text-gray-600 font-semibold mb-2 text-brand-600"><i class="fas fa-star mr-1"></i> Kelebihan:</p>
-                    <p class="text-sm text-gray-600">Spesialis instalasi jaringan listrik tegangan tinggi/rendah industri, kendali sistem otomatis PLC, dan perawatan kelistrikan gedung.</p>
-                </div>
-
             </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1595895694038-7f0535e62cc3?q=80&w=500&auto=format&fit=crop" alt="Americano" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Ice Americano</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 15.000</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Espresso shot ganda yang dilarutkan air, disajikan dingin menyegarkan.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1606791405792-1004f1718d0c?q=80&w=500&auto=format&fit=crop" alt="Matcha Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Matcha Latte</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 22.000</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Untuk non-kopi: teh hijau Jepang premium berpadu susu yang creamy.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-amber-100">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=500&auto=format&fit=crop" alt="Croissant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-[#3E2723]">Butter Croissant</h3>
+                        <span class="font-bold text-[#8D6E63]">Rp 17.000</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Kue pastri renyah bermentega tinggi, pendamping sempurna kopi hangat Anda.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer id="kontak" class="bg-gray-950 text-gray-300 pt-16 pb-8 border-t-8 border-brand-500">
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+    <footer class="bg-[#2D1B18] text-[#E0D4D2] pt-12 pb-6 border-t-4 border-[#8D6E63]">
+        <div class="container mx-auto px-6 max-w-6xl grid md:grid-cols-2 gap-8 mb-10">
             
             <div>
-                <h3 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-brand-500 rounded-full"></span> SMKN 2 Tembilahan
+                <h3 class="text-white font-serif font-bold text-xl mb-4 flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-[#8D6E63]"></i> Alamat Kedai
                 </h3>
-                <p class="text-sm text-gray-400 leading-relaxed">
-                    Sekolah Vokasi terakreditasi yang berfokus melahirkan sumber daya manusia berkompetensi tinggi dan siap kerja.
+                <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+                    Jl. Jend. Sudirman No. 45, Kecamatan Tembilahan, Kabupaten Indragiri Hilir, Riau (Sebelah Toko Utama).
                 </p>
+                <p class="text-xs text-amber-200/60 mt-3"><i class="far fa-clock mr-1"></i> Buka Setiap Hari: 10.00 - 23.00 WIB</p>
             </div>
 
             <div>
-                <h3 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-brand-500 rounded-full"></span> Kontak Informasi
+                <h3 class="text-white font-serif font-bold text-xl mb-4 flex items-center gap-2">
+                    <i class="fas fa-share-alt text-[#8D6E63]"></i> Ikuti Media Sosial Kami
                 </h3>
-                <ul class="space-y-3 text-sm">
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-map-marker-alt text-brand-500 mt-1 shrink-0"></i>
-                        <span>Jl. SKB No.01, Sungai Beringin, Kec. Tembilahan, Kabupaten Indragiri Hilir, Riau 29281</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="fas fa-phone-alt text-brand-500"></i>
-                        <a href="tel:081268102595" class="hover:text-brand-500 transition">0812 6810 2595</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="fas fa-envelope text-brand-500"></i>
-                        <a href="mailto:smkn2tembilahan.inhil@gmail.com" class="hover:text-brand-500 transition">smkn2tembilahan.inhil@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-brand-500 rounded-full"></span> Media Sosial Resmi
-                </h3>
-                <p class="text-sm text-gray-400 mb-4">Ikuti aktivitas terkini kegiatan kami di media sosial:</p>
+                <p class="text-sm text-gray-400 mb-4">Dapatkan info promo menarik harian lewat akun resmi kami:</p>
                 <div class="flex gap-4">
-                    <a href="https://instagram.com/official.smkn2tembilahan" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white text-lg hover:bg-gradient-to-tr hover:from-yellow-500 hover:to-purple-600 transition duration-300 shadow-md">
+                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-yellow-600 hover:to-purple-600 transition duration-300">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@officialsmkn2.tembilahan" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white text-lg hover:bg-black hover:text-cyan-400 transition duration-300 shadow-md">
+                    <a href="https://tiktok.com" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-black hover:text-cyan-400 transition duration-300">
                         <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/628123456789" target="_blank" class="w-10 h-10 bg-[#3E2723] rounded-full flex items-center justify-center text-white hover:bg-green-600 transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
+
         </div>
 
-        <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-            <p>&copy; 2026 SMKN 2 Tembilahan. Semua Hak Cipta Dilindungi.</p>
+        <div class="border-t border-amber-900/40 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2026 HD Kopi Tembilahan. Semua Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
